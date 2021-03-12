@@ -1,0 +1,86 @@
+section.welcome
+  background: #F8F8F8
+  h3
+    font-family: Poppins, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 2.9rem
+    @media (max-width: 1600px)
+      font-size: 2.5rem
+    @media (max-width: 1440px)
+      font-size: 2.2rem
+    line-height: 150%
+    text-align: center
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: #334d6e
+    padding-top: 2rem
+    padding-bottom: 1rem
+    @media (max-width: 500px)
+      font-size: 2.1rem
+
+  .copy
+    font-family: "PT Sans", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: .8rem
+    line-height: 150%
+    color: #334D6E
+    opacity: 0.4
+    text-align: center
+    padding-top: 2rem
+  .form-grid
+    display: grid
+    width: 75%
+    margin: auto 12.5%
+    grid-template-columns: 55% 45%
+    grid-template-rows: 100%
+    @media (max-width: 650px)
+      grid-template-columns: 100%
+      grid-template-rows: 50% 50%
+    & > div
+      padding: 1rem
+    .address
+      @media (max-width: 1500px)
+        padding-left: 3.5rem
+        font-size: 1.33rem
+      @media (max-width: 1000px)
+        padding-top: 2rem
+        padding-left: 2rem
+      display: grid
+      place-items: center flex-start
+      padding-left: 9rem
+      @media (max-width: 650px)
+        padding-left: 1rem
+        padding-top: 4rem
+      color: #334d6e
+      font-family: "PT Sans", sans-serif
+      font-size: 1.5rem
+      line-height: 150%
+      .blink
+        color: #334d6e
+    form
+      label
+        padding-left: .6rem
+        font-family: "PT Sans", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 1.125rem
+        line-height: 150%
+        color: #334D6E
+      .form-group > label
+        font-size: 1.35rem
+        @media (max-width: 1500px)
+          font-size: 1.1rem
+      .form-group > input
+        font-size: 2rem
+        @media (max-width: 1500px)
+          font-size: 1.5rem
+      button[type='submit']
+        background: #334D6E
+        box-shadow: 0px 15px 60px rgba(51, 77, 110, 0.2)
+        border-radius: .7rem
+        width: 100%
+        padding: 1rem 1.5rem
+        text-transform: uppercase
+        font-size: 1.2rem

@@ -1,0 +1,45 @@
+header.header
+  @media (max-width: 1000px)
+    padding-top: 2rem
+  z-index: 200
+  div.header-grid
+    width: 100vw
+    height: 100%
+    margin: auto
+    padding: 0 12.5%
+    display: flex
+    justify-content: space-between
+    @media (max-width: 1000px)
+      justify-content: center
+    place-items: center
+    img
+      //width: 100%
+      width: 10rem
+    a
+      font-size: 1.3rem
+      @media (max-width: 1600px)
+        font-size: 100%
+      text-decoration: none
+      color: black
+      cursor: pointer
+    .link
+      position: relative
+      transition: clip-path 275ms ease
+      @media (max-width: 1000px)
+        display: none
+      &:hover span::before, &:focus span::before
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+      span
+        position: relative
+        display: inline-block
+        color: white
+
+        &::before
+          position: absolute
+          content: attr(data-content)
+          color: white
+          text-decoration: underline
+          text-decoration-color: white
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%)
+          transition: clip-path 275ms ease

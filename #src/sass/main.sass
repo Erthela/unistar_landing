@@ -1,0 +1,501 @@
+main.main div
+  @media (min-width: 1000px)
+    #blums, #pros, #form
+      margin-top: -6.25rem
+      padding-top: 6.25rem
+    #whoWeAre
+      margin-top: -6.25rem
+      padding-top: 11.25rem
+  h3
+    font-family: Poppins, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 2.5rem
+    @media (max-width: 1440px)
+      font-size: 2.2rem
+    line-height: 150%
+    text-align: center
+    letter-spacing: 0.01em
+    text-transform: uppercase
+  .container
+    max-width: 85vw
+  section.hero
+    width: 100%
+    height: 40rem
+    @media (max-width: 1500px)
+      height: 30rem
+    @media (max-width: 1000px)
+      height: auto
+      padding-bottom: 1.5rem
+    background: #334D6E
+    text-align: center
+    display: grid
+    grid-template-areas: "m"
+    grid-template-columns: 100%
+    grid-template-rows: 100%
+    h1, & div div:first-child
+      text-transform: uppercase
+    .title-wrapper
+      padding-top: 4rem
+      color: white
+      font-size: 1.2rem
+      grid-area: m
+      width: 70%
+      margin: 0 auto
+      @media (max-width: 1500px)
+        padding-top: 3.5rem
+      @media (max-width: 1440px)
+        padding-top: 2.6rem
+        font-size: 1rem
+      @media (max-width: 1000px)
+        padding-top: 2rem
+        width: 80%
+      h1
+        padding-top: 1.75rem
+        font-size: 3.5rem
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: 500
+        line-height: 130%
+        text-align: center
+        letter-spacing: 1.5px
+        text-transform: uppercase
+        @media (max-width: 1500px)
+          font-size: 3rem
+        @media (max-width: 1000px)
+          font-size: 2rem
+      & > div
+        width: 50%
+        @media (max-width: 800px)
+          width: 98%
+        margin: 0 auto
+      .optimize
+        padding-top: 2rem
+        font-size: 1.5rem
+        letter-spacing: .05rem
+        max-width: 40ch
+        @media (max-width: 1440px)
+          padding-top: 1.2rem
+          font-size: 1.2rem
+      .platforms
+        padding-top: 5rem
+        font-size: 1.405rem
+        @media (max-width: 1440px)
+          padding-top: 3.6rem
+          font-size: 1.305rem
+    img[alt='blue bot']
+      grid-area: m
+      position: relative
+      width: 21.5rem
+      right: 26.4vw
+      top: -28.5rem
+      z-index: 100
+      @media (max-width: 1500px)
+        width: 17.5rem
+        right: 30vw
+        top: -22.5rem
+      @media (max-width: 1440px)
+        right: 28vw
+        top: -21.5rem
+        width: 16.5rem
+      @media (max-width: 1000px)
+        display: none
+    img[alt='orange bot']
+      grid-area: m
+      position: relative
+      width: 21.5rem
+      left: 26.5vw
+      top: -45rem
+      z-index: 100
+      @media (max-width: 1500px)
+        left: 28vw
+        top: -34rem
+        width: 17.5rem
+      @media (max-width: 1440px)
+        left: 30vw
+        top: -33rem
+        width: 17.5rem
+      @media (max-width: 1000px)
+        display: none
+  section.blums
+    color: #334D6E
+    width: 100%
+    h2
+      text-align: center
+      font-family: 'Poppins', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 2.5rem
+      line-height: 150%
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      padding-top: 2.7rem
+    & > div
+      margin: auto 12.5%
+      h3
+        text-align: center
+        font-size: 1.6rem
+        padding-top: 1rem
+        padding-bottom: 1rem
+        font-weight: bold
+      .blum
+        width: 100%
+        display: grid
+        grid-template-columns: 70% 30%
+        grid-template-areas: "t f"
+        place-items: flex-start center
+        @media (max-width: 1000px)
+          grid-template-areas: "f""t"
+          grid-template-columns: 100%
+          &.reverse
+            grid-template-areas: "f""t"
+            grid-template-columns: 100%
+        &.reverse
+          grid-template-columns: 30% 70%
+          grid-template-areas: "f t"
+          ul
+            padding-left: 5rem
+            padding-right: 0
+            @media (max-width: 500px)
+              padding-left: 0
+        ul
+          grid-area: t
+          font-family: 'Helvetica', sans-serif
+          padding-right: 5rem
+          font-style: normal
+          font-weight: normal
+          font-size: 1.377rem
+          @media (max-width: 1440px)
+            font-size: 1.2rem
+          line-height: 150%
+          list-style-position: inside
+          li
+            padding-bottom: .5rem
+          @media (max-width: 500px)
+            font-size: 1.3rem
+            padding-left: 0
+            padding-right: 0
+            ul
+              position: relative
+              left: 1rem
+        .img-wrapper
+          grid-area: f
+          display: grid
+          width: 100%
+          place-self: flex-start center
+          grid-template-columns: 100%
+          grid-template-rows: 95% 5%
+          border-radius: .5rem
+          &.faq-bot
+            background: #F39640
+          &.serviceDesk-bot
+            background: #10AA7F
+          &.phone-bot
+            background: #E17B4F
+          &.alice-bot
+            background: #3AABE8
+          @media (max-width: 1000px)
+            margin-bottom: 2rem
+          .photo-caption
+            background: transparent
+            grid-column: 1/2
+            grid-row: 2/3
+            font-family: 'Helvetica', sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: .94rem
+            line-height: 150%
+            text-transform: uppercase
+            color: #fff
+            width: fit-content
+            place-self: flex-end
+            border: none
+            &:focus
+              box-shadow: none
+            img, picture
+              width: 1.5rem
+              height: auto
+              padding: 0
+          picture
+            grid-column: 1/2
+            grid-row: 1/2
+            place-self: center
+            place-items: center
+          & > picture img
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 1.5rem 6rem
+            height: 16rem
+            @media (max-width: 1500px)
+              padding: 1.4rem 3rem
+            @media (max-width: 1000px)
+              width: 50rem
+              padding: 1rem 12.5rem 2.5rem
+            @media (max-width: 800px)
+              padding: 1rem 9rem 2.5rem
+            @media (max-width: 600px)
+              padding: 1rem 4rem 2.5rem
+            object-fit: contain
+            max-width: 100%
+            border-radius: .5rem
+            &[alt = 'faq bot']
+              background: #F39640
+            &[alt = 'serviceDesk bot']
+              background: #10AA7F
+            &[alt = 'phone bot']
+              background: #E17B4F
+            &[alt = 'alice bot']
+              background: #3AABE8
+              padding: 2rem 1.7rem
+  section.blums + div
+    .modal-content
+      padding: 1rem
+      background: #F8F8F8
+      font-family: "Helvetica", sans-serif
+      button.close
+        position: absolute
+        place-self: flex-end
+        font-size: 2rem
+      .modal-footer
+        border: none
+        .btn-primary
+          width: 100%
+          background: #334d6e
+          padding: .5rem 0
+          font-size: 1.35rem
+      .modal-header
+        border: none
+        h5
+          font-family: Poppins, sans-serif
+          font-style: normal
+          font-weight: 500
+          font-size: 1.8rem
+          line-height: 150%
+          text-align: center
+          letter-spacing: 0.01em
+          text-transform: uppercase
+          color: #334d6e
+          padding-bottom: 1rem
+      .modal-body
+        label
+          padding-left: .6rem
+          font-family: "Helvetica", sans-serif
+          font-style: normal
+          font-weight: normal
+          line-height: 150%
+          color: #334D6E
+        .form-group > label
+          font-size: 1.2rem
+          font-weight: bold
+        .form-group > input
+          font-size: 1.5rem
+
+  section.channels
+    .title
+      text-align: center
+      color: #334d6e
+      font-family: 'Helvetica', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.45rem
+      line-height: 150%
+      margin: auto 18.75%
+      padding-top: 3rem
+    .swiper-container
+      height: 9rem
+      margin: auto 6.875%
+      .swiper-wrapper
+        .swiper-slide
+          margin: auto
+          text-align: left
+          font-size: 1.375rem
+          background: #fff
+          display: grid
+          width: 80%
+          place-items: center
+          font-family: "Helvetica", sans-serif
+          font-style: normal
+          font-weight: normal
+          line-height: 150%
+          & img
+            padding-right: 1.875rem
+            width: 5.25rem
+            height: 3.375rem
+          & > div
+            display: flex
+            place-items: center
+      .swiper-pagination-bullet
+        width: 3rem
+        height: .3rem
+        border-radius: 3rem
+        background: #334D6E
+        @media (max-width: 1000px)
+          width: 1rem
+      @media (max-width: 1500px)
+        .swiper-button-next
+          right: 0rem
+        .swiper-button-prev
+          left: 0rem
+      .swiper-button-prev, .swiper-button-next
+        color: #334D6E
+        padding: 2rem
+        border-radius: 5rem
+        border: 2px solid #334D6E
+        --swiper-navigation-size: 1.65rem
+        top: 3.25rem
+        @media (max-width: 1500px)
+          padding: 1.5rem
+          top: 3.85rem
+        @media (max-width: 1000px)
+          display: none
+  section.pros
+    color: #334D6E
+    h3
+      color: #334D6E
+      padding-top: 4rem
+      padding-bottom: 4.25rem
+      @media (max-width: 500px)
+        padding: 3rem 0 1rem
+    .container
+      font-family: "Helvetica", sans-serif
+      max-width: 85vw
+      .row
+        .col
+          margin: 2rem 4rem 2rem
+          @media (max-width: 800px)
+            margin: 2rem 0
+          font-family: "Helvetica", sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 1.1rem
+          line-height: 150%
+          & > div
+            display: flex
+            place-items: center
+            @media (max-width: 800px)
+              flex-direction: column
+            & > div
+              margin-left: 1.875rem
+              @media (max-width: 800px)
+                max-width: 90vw
+                width: 90vw
+                margin-left: 0
+                padding-top: 1rem
+        .col.align-self-center
+          max-width: 43%
+          margin: auto
+          padding-top: 2rem
+          @media (max-width: 1000px)
+            max-width: 94%
+  section.purpose
+    margin-top: 4rem
+    font-family: "Helvetica", sans-serif
+    padding: 3rem 0
+    color: #fff
+    max-width: 100%
+    width: 100%
+    text-align: center
+    background: #334D6E
+    h3
+      width: 100%
+      padding-right: 0
+      font-size: 2.1rem
+    div.col
+      margin: auto
+      max-width: 40%
+      @media (max-width: 1000px)
+        max-width: 80%
+      font-family: "Helvetica", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.375rem
+      line-height: 150%
+      display: flex
+      align-items: center
+      text-align: center
+  section.whoWeAre
+    font-family: "Helvetica", sans-serif
+    color: #334D6E
+    padding-top: 5rem
+    h3
+      text-align: center
+      padding-bottom: 2rem
+    .whoWeAre-grid
+      @media (max-width: 1500px)
+        margin: auto 3rem
+      .col
+        font-family: "Helvetica", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 1.45rem
+        line-height: 150%
+        @media (max-width: 1500px)
+          font-size: 1.25rem
+        @media (max-width: 850px)
+          padding: .5rem
+      .row
+        @media (max-width: 1500px)
+          margin: auto 3rem
+  section.howWork
+    width: 100vw
+    font-family: "Helvetica", sans-serif
+    color: #334D6E
+    h3
+      padding: 4rem 0
+    h4
+      font-family: Poppins, sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 1.563rem
+      line-height: 150%
+      text-align: center
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      width: max-content
+    .container
+      //max-width: 75%
+      //margin: auto 12.5%
+      .howWork-grid
+        font-family: "Helvetica", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 1.125rem
+        @media (max-width: 1500px)
+          font-size: 1rem
+        line-height: 150%
+        text-align: center
+      .number
+        padding: 1rem 1.481rem
+        border-radius: 50%
+        color: white
+        font-size: 1.563rem
+        margin: 1rem auto 2rem
+      .col:nth-child(1) .number
+        background: #E17B4F
+      .col:nth-child(2) .number
+        background: #F39640
+      .col:nth-child(3) .number
+        background: #10AA7F
+      .col:nth-child(4) .number
+        background: #3AABE8
+  section.allies, section.user
+    h3
+      padding: 4rem 0 3rem
+      color: #334d6e
+      font-size: 1.9rem
+      @media (max-width: 1600px)
+        font-size: 2.5rem
+      @media (max-width: 1440px)
+        font-size: 2.2rem
+    &.container
+      .row
+        place-items: center
+        .col
+          margin: auto
+          display: grid
+          place-items: center
+          img
+            width: 15rem
+            margin: 1rem
+            padding: .5rem
+  section.user
